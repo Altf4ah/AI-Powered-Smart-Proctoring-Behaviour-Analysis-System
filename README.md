@@ -2,6 +2,16 @@
 
 A real-time, modular AI platform that monitors exam/interview sessions and detects suspicious behaviour using computer vision + temporal reasoning.
 
+## Current implementation status
+
+This repository now includes a starter implementation:
+- `smart_proctor/` with temporal feature aggregation + suspicion scoring + explanation generation
+- `apps/api/main.py` with FastAPI endpoints (`/health`, `/score`, `/sessions/{session_id}`)
+- `scripts/demo_scoring.py` to run a local scoring demo
+- `tests/test_scoring.py` with baseline unit tests
+
+---
+
 ## Why this project is valuable
 
 This project demonstrates end-to-end engineering:
@@ -210,4 +220,4 @@ cd apps/dashboard
 npm install && npm run dev
 ```
 
-(Scaffold to be added in subsequent commits.)
+Use `python scripts/demo_scoring.py` to validate scoring logic without starting the API.
